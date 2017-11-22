@@ -1,3 +1,7 @@
+package date
+
+import "time"
+
 // 计算两个时间相差的天数
 func TimeSubDays(t1, t2 time.Time) int {
 	if t1.Location().String() != t2.Location().String() {

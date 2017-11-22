@@ -1,4 +1,4 @@
-package bean
+package base
 
 const (
 	CODE_Success               = 200

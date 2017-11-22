@@ -4,13 +4,13 @@ import (
 	"errors"
 	"fmt"
 	"github.com/astaxie/beego"
-	"github.com/bysir-zl/bygo/log"
 	"github.com/bysir-zl/bygo/util/encoder"
 	"github.com/tealeg/xlsx"
 	"net/http"
 	"os"
 	"path/filepath"
 	"reflect"
+	"golang_utils/glog"
 )
 
 func ObjToMap(obj interface{}) map[string]interface{} {
@@ -117,7 +117,7 @@ func ServerExcelMap(data []map[string]interface{}, name string, col []string, ma
 		// delete file
 		err := os.Remove(fileAbsPath)
 		if err != nil {
-			log.Error("EXCEL", err)
+			glog.Error("EXCEL", err)
 		}
 	}()
 	c.Ctx.ResponseWriter.ResponseWriter.Header().Set("Content-Disposition",
