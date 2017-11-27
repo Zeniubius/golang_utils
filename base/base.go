@@ -4,7 +4,7 @@ import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/validation"
 	"errors"
-	"golang_utils"
+	"Zeniubius/golang_utils"
 )
 
 type BaseController struct {
