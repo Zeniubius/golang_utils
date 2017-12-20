@@ -10,7 +10,7 @@ import (
 	"os"
 	"path/filepath"
 	"reflect"
-	"golang_utils/glog"
+	"github.com/Zeniubius/golang_utils/glog"
 )
 
 func ObjToMap(obj interface{}) map[string]interface{} {
